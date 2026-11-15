@@ -122,7 +122,7 @@ fnmatch_helper(const char** pcur, const char** scur, int flags) {
 }
 
 int
-fnmatch(const char* p, const char* s, int flags) {
+rgss_fnmatch(const char* p, const char* s, int flags) {
 	const int period = !(flags & FNM_DOTMATCH);
 	const int pathname = flags & FNM_PATHNAME;
 

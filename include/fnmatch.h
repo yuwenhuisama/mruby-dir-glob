@@ -12,6 +12,6 @@
 
 #define FNM_NOMATCH		1
 
-int fnmatch(const char* pattern, const char* string, int flags);
+int rgss_fnmatch(const char* pattern, const char* string, int flags);
 
 #endif // FNMATCH_H_81FC5C17_8B73_2C6E_4A94_3F68CCA3B7E1

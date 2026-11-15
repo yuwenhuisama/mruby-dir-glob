@@ -17,7 +17,7 @@ mrb_fnmatch(mrb_state *mrb, mrb_value klass)
 	pattern = mrb_str_to_cstr(mrb, m_pattern);
 	string = mrb_str_to_cstr(mrb, m_string);
 
-	result = fnmatch(pattern, string, m_flags);
+	result = rgss_fnmatch(pattern, string, m_flags);
 
 	return mrb_bool_value(result == 0);
 }
